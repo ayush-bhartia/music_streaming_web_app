@@ -1,9 +1,8 @@
-<template>
-   
+<template>   
   <nav>
-    <router-link to="/">home</router-link> |
+    <!-- <router-link to="/">home</router-link> |
     <router-link to="/about">About</router-link>
-    <router-link to="/login">Login</router-link>
+    <router-link to="/login">Login</router-link> -->
   </nav> 
   <router-view /> 
 </template>
@@ -32,7 +31,8 @@ export default {
 
 <style lang="scss">
 body{
-  background-color: #2c3e50;
+  margin: 0px;
+  padding: 0px;
   color: #fff;
 }
 .login{
@@ -40,9 +40,13 @@ body{
   background-color: #2c3e50 ;
   color: #42b983;
 }
+.register{
+  display: flex;
+  flex-direction: column;
+}
 .about{
-  background-color: #2c3e50 ;
-  color: whitesmoke;
+  background-color: black ;
+  color: purple;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -57,7 +61,8 @@ a{
 }
 
 nav {
-  padding: 30px;
+  padding: 20px;
+  background-color: black;
 } 
 
  nav a {

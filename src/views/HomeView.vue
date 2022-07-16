@@ -1,9 +1,11 @@
 <template>
   <div class="home">
-   <h1>Welcome {{ name }}</h1> 
+    <div class="box">
+   <h1>Welcome {{ user }}</h1> 
    <router-link to="/about">About<br><br><br><br><br></router-link>
    <br>
    <button class="logout" @click="Logout">Logout</button>
+  </div>
   </div>
 </template>
 
@@ -36,13 +38,33 @@ export default {
 </script>
 <style scoped>
 .home{
-  background-color: white;
-  color: black;
+  /* background-color: rgb(236, 127, 127);
+  color: black; */
+   background-image: url("../assets/loginbg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #ccc;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: fixed;
+  /* display: block; */
+ background-color: rgba(182, 168, 145, 0.403);
+ color: white;
+ display: inline; 
+ font:100;
 }
 .logout{
   color: blue;
   background-color: peru;
   padding: 10px;
+}
+.box{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
 </style>

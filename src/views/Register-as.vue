@@ -2,8 +2,8 @@
     <div class="register">
         <h1>Register</h1>
          <form @submit.prevent="Register">   
-  <input type="text" placeholder="Email" v-model="email"/>
-  <input type="password" placeholder="Password" v-model="password"/>
+  <input  class="xyz" type="text" placeholder="Email" v-model="email"/><br>
+  <input type="password" placeholder="Password" v-model="password"/><br>
   <input type="submit" value="Register" />
   <p>
     Have an Account
@@ -42,5 +42,24 @@ export default{
 </script>
 
 <style>
-
+.register{   
+    background-image: url("../assets/loginbg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #ccc;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: fixed;
+  /* display: block; */
+ background-color: rgba(182, 168, 145, 0.403);
+ color: white;
+}
+.xyz{
+    padding: 5px;
+    margin: 5px;
+    width: 100px;
+    border-radius: 20px;
+}
 </style>
