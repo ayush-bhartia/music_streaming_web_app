@@ -35,7 +35,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  color: rgb(240, 240, 240);
+  color: rgb(216, 203, 249);
   font:100;
  font-size: xx-large;
 }

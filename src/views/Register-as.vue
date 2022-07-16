@@ -1,15 +1,17 @@
 <template>
     <div class="register">
-        <h1>Register</h1>
+        <div class="box">
+        <h1 class="header">Register</h1>
          <form @submit.prevent="Register">   
   <input  class="xyz" type="text" placeholder="Email" v-model="email"/><br>
-  <input type="password" placeholder="Password" v-model="password"/><br>
-  <input type="submit" value="Register" />
-  <p>
-    Have an Account
-    <router-link to="/login">Login Here</router-link>
+  <input class="xyz" type="password" placeholder="Password" v-model="password"/><br>
+  <input type="submit" class="buttonreg" value="Register" />
+  <p><strong>Have an Account ?&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+    
+    <router-link to="/login"><strong>Login Here</strong></router-link>
   </p>
 </form>
+</div>
     </div>
 </template>
 
@@ -58,8 +60,36 @@ export default{
 }
 .xyz{
     padding: 5px;
-    margin: 5px;
-    width: 100px;
-    border-radius: 20px;
+    margin: 6px;
+    width: 300px;
+    height: 35px;
+    border-radius: 15px 0px;
+    background-color: beige;
+    font-size: 20px;
+}
+.header{
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.box{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 2px solid red;
+    padding: 2%;
+    border-radius: 5px 0px;
+    backdrop-filter: blur(5px);
+}
+.buttonreg{
+    padding: 15px;
+    width: 95%;
+    margin: 10px;
+    border-radius: 10px 0px;
+    font-size: 20px;
+    background-color: aqua;
+}
+.buttonr:hover{
+    background-color: beige;
 }
 </style>

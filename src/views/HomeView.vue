@@ -4,8 +4,8 @@
    <h1>Welcome {{ user }}</h1> 
    <router-link to="/about">About<br><br><br><br><br></router-link>
    <br>
-   <button class="logout" @click="Logout">Logout</button>
   </div>
+   <button class="logout" @click="Logout">Logout</button>
   </div>
 </template>
 
@@ -56,9 +56,17 @@ export default {
  font:100;
 }
 .logout{
-  color: blue;
+  color: rgb(97, 97, 200);
   background-color: peru;
-  padding: 10px;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  font: bold;
+  color: whitesmoke;
+  position: absolute;
+  font-size: 1.1em;
+  right: 5%;
+  top: 5%;
+  border-radius: 10px;
 }
 .box{
   position: fixed;
@@ -66,7 +74,11 @@ export default {
   left: 50%;
   transform: translate(-50%,-50%);
 }
-
+.logout:hover{
+  background-color: aqua;
+  transition-delay: 20ms;
+  color: rgb(5, 34, 227);
+}
 </style>
 
 

@@ -2,7 +2,7 @@
 
   <div class="login">
     <div class="box">
-   <h1>Login</h1>    
+   <h1 id="h1">Login</h1>    
    <form @submit.prevent="Login">   
   <input class="email" type="text" placeholder="Email" v-model="email"/><br>
   <input class="email" type="password" placeholder="Password" v-model="password"/><br>
@@ -59,31 +59,45 @@ export default {
   padding: 10px;
   margin: 5px;
   border-radius: 10px;
-  background-color: beige;  
+  font-size: 20px;
+  background-color: beige;  width: 100%;
 }
 img{
   opacity: 1.0;
 }
 #need{
     color: rgb(255, 255, 255);
-    font-size: larger;
+    font-size: 20px;
+
+}
+#h1{
+  font-size: 50px;
+  font-family: 'Times New Roman', Times, serif;
 }
 .box{
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
+  align-content: center;
 }
 .button{
   padding: 10px;
-  width: 100px;
-  margin: 25px;
-  margin-bottom: 0px;
+  /* width: 100px; */
+  margin: 5px;
   border-top-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  background-color: rgb(235, 74, 224);
+  background-color: rgb(235, 74, 224,0.1);
   color: rgb(236, 236, 236);
   font-family: sans-serif;
-  font-size: larger;
+  font: bold;
+  font-size: x-large ;  
+  width: 107%;
+  left: -100%;
+}
+.button:hover{
+  background-color: rgb(0, 0, 255);
+  transition-delay: 20ms;
+
 }
 </style>
