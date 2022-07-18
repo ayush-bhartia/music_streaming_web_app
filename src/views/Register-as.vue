@@ -1,12 +1,12 @@
 <template>
     <div class="register">
-        <div class="box">
+        <div class="regbox">
         <h1 class="header">Register</h1>
          <form @submit.prevent="Register">   
   <input  class="xyz" type="text" placeholder="Email" v-model="email"/><br>
   <input class="xyz" type="password" placeholder="Password" v-model="password"/><br>
   <input type="submit" class="buttonreg" value="Register" />
-  <p><strong>Have an Account ?&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+  <p id="linklogin"><strong>Have an Account ?&nbsp;&nbsp;&nbsp;&nbsp;</strong>
     
     <router-link to="/login"><strong>Login Here</strong></router-link>
   </p>
@@ -70,8 +70,9 @@ export default{
 .header{
     font-size: 50px;
     font-family: 'Times New Roman', Times, serif;
+    color: rgba(62, 130, 255, 0.9);
 }
-.box{
+.regbox{
     position: fixed;
     top: 50%;
     left: 50%;
@@ -84,12 +85,21 @@ export default{
 .buttonreg{
     padding: 15px;
     width: 95%;
-    margin: 10px;
+    margin: 8px;
     border-radius: 10px 0px;
     font-size: 20px;
-    background-color: aqua;
+    background-color: rgba(235, 74, 224,0.1);
+    color: rgba(236,236,236);
+    font-family: sans-serif;
+    font: bold;
+    font-size: x-large;
 }
-.buttonr:hover{
-    background-color: beige;
+.buttonreg:hover{
+    background-color: rgba(0,0,255);
+    transition-delay: 20ms;
+}
+#linklogin{
+    color:rgb(164, 194, 255); 
+    font-size: 20px;
 }
 </style>

@@ -4,6 +4,9 @@
     <router-link to="/about">About</router-link>
     <router-link to="/login">Login</router-link> -->
   </nav> 
+  <!-- <div id="app"> -->
+  <!-- <GoogleLogin :params="params" :renderParams="renderParams" :onSuccess="onSuccess" :onFailure="onFailure"></GoogleLogin> -->
+  <!-- </div> -->
   <router-view /> 
 </template>
 
@@ -11,6 +14,7 @@
 import { onBeforeMount } from 'vue';
 import { useRouter, useRoute } from 'vue-router';
 import firebase from 'firebase'
+// import GoogleLogin from 'vue-google-login';
 
 export default {
   setup() {
@@ -25,7 +29,7 @@ export default {
             }
           })
     });
-  }
+  },
 }
 </script>
 

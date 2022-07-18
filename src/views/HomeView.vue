@@ -40,28 +40,28 @@ export default {
 .home{
   /* background-color: rgb(236, 127, 127);
   color: black; */
-   background-image: url("../assets/loginbg.jpg");
+   /* background-image: url("../assets/loginbg.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #ccc;
+  /* background-color: #ccc; */
   height: 100vh;
   top: 0;
   left: 0;
   width: 100%;
   position: fixed;
   /* display: block; */
- background-color: rgba(182, 168, 145, 0.403);
- color: white;
+ /* background-color: rgba(182, 168, 145, 0.403); */
+ color: rgb(237, 16, 16);
  display: inline; 
  font:100;
 }
 .logout{
   color: rgb(97, 97, 200);
-  background-color: peru;
-  padding: 20px;
+  background-color: rgba(235, 74, 224, 0);
+  padding: 15px;
   font-family: 'Poppins', sans-serif;
   font: bold;
-  color: whitesmoke;
+  color: black;
   position: absolute;
   font-size: 1.1em;
   right: 5%;
@@ -75,9 +75,10 @@ export default {
   transform: translate(-50%,-50%);
 }
 .logout:hover{
-  background-color: aqua;
+  background-color: rgba(0,0,255);
   transition-delay: 20ms;
-  color: rgb(5, 34, 227);
+  font: bolder(100px);
+  color: rgb(255, 255, 255);
 }
 </style>
 

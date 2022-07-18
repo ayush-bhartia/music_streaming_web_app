@@ -21,7 +21,5 @@ const firebaseConfig = {
 createApp(App).use(store).use(router).mount('#app')
 
 export const firestore = firebase.firestore();
-
-
 export default firebase;
 
