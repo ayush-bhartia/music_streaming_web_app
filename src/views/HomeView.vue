@@ -121,9 +121,7 @@ export default {
       name,
       Logout,
     }
-},
-}
-// --------
+},}
 // window.requestAnimFrame=function(){return window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame||window.oRequestAnimationFrame||window.msRequestAnimationFrame||function(a){window.setTimeout(a,1E3/60)}}();
 
 // document.onselectstart = function() {
@@ -142,7 +140,7 @@ export default {
 // var orbs = [];
 // // var orbCount = 30;
 // // var radius;
-
+// console.log("Hey ++");
 // var trailCB = document.getElementById('trail');
 // var trail = trailCB.checked;
 // var clearer = document.getElementById('clear');
